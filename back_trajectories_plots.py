@@ -22,9 +22,9 @@ all_files = glob.glob(path)
 all_files.sort(reverse=True)
 
 # Read monthly averaged sea ice extent shape files
-seaice_june = shpreader.Reader("../Downloads/extent_N_201806_polygon_v3.0/extent_N_201806_polygon_v3.0.shp")
-seaice_july = shpreader.Reader("../Downloads/extent_N_201807_polygon_v3.0/extent_N_201807_polygon_v3.0.shp")
-seaice_august = shpreader.Reader("../Downloads/extent_N_201808_polygon_v3.0/extent_N_201808_polygon_v3.0.shp")
+seaice_june = shpreader.Reader("./extent_N_201806_polygon_v3.0/extent_N_201806_polygon_v3.0.shp")
+seaice_july = shpreader.Reader("./extent_N_201807_polygon_v3.0/extent_N_201807_polygon_v3.0.shp")
+seaice_august = shpreader.Reader("./extent_N_201808_polygon_v3.0/extent_N_201808_polygon_v3.0.shp")
 
 seaice_files = [seaice_june, seaice_july, seaice_august]
 
