@@ -93,8 +93,11 @@ for fname in all_files:
     cp.set_clim(1e-3, 1e-1)
 # Add station markers
     zeppelin = axs[count].plot(11.89, 78.9, marker="o", color='lime', transform=ccrs.PlateCarree())
+    zeplab = axs[count].text(-4.5, 76.5, 'ZEP', fontsize=10, fontweight='bold', transform=ccrs.PlateCarree())
     villum = axs[count].plot(-16.4, 81.36, marker="o", color='lime', transform=ccrs.PlateCarree())
+    villab = axs[count].text(-14.5, 82, 'VRS', fontsize=10, fontweight='bold', transform=ccrs.PlateCarree())
     alert = axs[count].plot(-62.3, 82.5, marker="o", color='lime', transform=ccrs.PlateCarree())
+    altlab = axs[count].text(-62.6, 83.5, 'ALT', fontsize=10, fontweight='bold', transform=ccrs.PlateCarree())
     zeppelin = axs[count_traj].plot(11.89, 78.9, marker="o", color='lime', transform=ccrs.PlateCarree())
     villum = axs[count_traj].plot(-16.4, 81.36, marker="o", color='lime', transform=ccrs.PlateCarree())
     alert = axs[count_traj].plot(-62.3, 82.5, marker="o", color='lime', transform=ccrs.PlateCarree())
